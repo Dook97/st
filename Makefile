@@ -18,16 +18,16 @@ options:
 .c.o:
 	$(CC) $(STCFLAGS) -c $<
 
-st.o: config.def.h st.h win.h
-x.o: arg.h config.def.h st.h win.h
+st.o: config.h st.h win.h
+x.o: arg.h config.h st.h win.h
 
-$(OBJ): config.def.h config.mk
+$(OBJ): config.h config.mk
 
 st: $(OBJ)
 	$(CC) -o $@ $(OBJ) $(STLDFLAGS)
 
 clean:
-	rm -f st $(OBJ) st-$(VERSION).tar.gz
+	rm -f st $(OBJ) st-$(VERSION).tar.gz *.orig *.rej
 
 dist: clean
 	mkdir -p st-$(VERSION)
