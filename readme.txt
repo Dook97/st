@@ -20,8 +20,8 @@ Added features:
 * secondary fonts if your primary font doesn't support emoji or whatnot
 * proper box-character rendering
 * Luke Smith's externalpipe feature
-	-> copy output of a command with alt+y
-	-> copy URLs with alt+o
+	-> copy output of a command with alt+o
+	-> copy URLs with alt+y
 	-> follow URLs with alt+w
 * delete key works like delete is supposed to
 
